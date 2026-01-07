@@ -7,13 +7,8 @@ import {
   useColorScheme,
   StatusBar,
 } from 'react-native';
-import { GameAnalysis, MoveBreakdown } from '../types/analysis';
 
-interface Props {
-  data: GameAnalysis;
-}
-
-export const GameAnalysisScreen: React.FC<Props> = ({ data }) => {
+export const GameAnalysisScreen = ({ data }) => {
   const isDarkMode = useColorScheme() === 'dark';
   const theme = isDarkMode ? darkTheme : lightTheme;
 
@@ -112,7 +107,7 @@ export const GameAnalysisScreen: React.FC<Props> = ({ data }) => {
   );
 };
 
-const MoveItem = ({ move, theme }: { move: MoveBreakdown, theme: any }) => (
+const MoveItem = ({ move, theme }) => (
   <View style={[styles.moveCard, { backgroundColor: theme.cardBackground, shadowColor: theme.shadow }]}>
     <View style={styles.moveNumberContainer}>
         <Text style={styles.moveNumber}>{move.moveNumber}</Text>
@@ -140,7 +135,7 @@ const MoveItem = ({ move, theme }: { move: MoveBreakdown, theme: any }) => (
   </View>
 );
 
-const getEvalColor = (score: string) => {
+const getEvalColor = (score) => {
   if (score.includes('+')) return '#4CAF50'; // White advantage
   if (score.includes('-')) return '#F44336'; // Black advantage
   return '#9E9E9E'; // Drawish

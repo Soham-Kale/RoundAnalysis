@@ -1,6 +1,4 @@
-import { AnalysisResponse } from '../types/analysis';
-
-export const MOCK_ANALYSIS_DATA: AnalysisResponse = {
+export const MOCK_ANALYSIS_DATA = {
     game_analysis: {
         openingIdentification: {
             name: "Italian Game, Two Knights Defense, Fried Liver Attack",
