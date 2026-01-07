@@ -4,11 +4,10 @@ import {
   Text,
   StyleSheet,
   ScrollView,
-  TouchableOpacity,
   useColorScheme,
   StatusBar,
 } from 'react-native';
-import { GameAnalysis, MoveBreakdown, ThemeRow, CategoryAssessment } from '../types/analysis';
+import { GameAnalysis, MoveBreakdown } from '../types/analysis';
 
 interface Props {
   data: GameAnalysis;
@@ -157,6 +156,7 @@ const styles = StyleSheet.create({
   },
   section: {
     marginBottom: 24,
+    marginTop: 40,
   },
   openingName: {
     fontSize: 28,
