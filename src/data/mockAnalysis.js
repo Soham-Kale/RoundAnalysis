@@ -124,5 +124,40 @@ export const MOCK_ANALYSIS_DATA = {
             whosBetter: "White is decisively better, bordering on winning. The compensation for the sacrificed knight is more than adequate: Black's king is a refugee, Black's pieces are undeveloped and uncoordinated, and White's forces are perfectly poised to deliver a knockout blow. The position is a testament to the principle that king safety and initiative can often outweigh a material deficit.",
             nextSteps: "For White, the plan is clear and direct: continue the attack. The next move is almost always **7. Qf3+**. This single move accomplishes three things: it brings the powerful queen into the attack, it forces the Black king to an even worse square (usually Ke6), and it attacks the d5 knight. Following this, White will continue with moves like Nc3, d4, and O-O-O, piling pressure on Black's exposed king. For Black, the goal is simple but incredibly difficult: survive. The king must try to find shelter, perhaps via Ke6-Kd7 or by running back to g8. The primary task is to parry White's immediate threats, trade pieces where possible to diffuse the attack, and pray that if the storm is weathered, the extra piece will eventually decide the game in the endgame."
         }
+    },
+    event_analysis: {
+        cumulative_analysis: {
+            opening_repertoire: {
+                summary: "The player favors sharp, open positions starting with 1. e4.",
+                openings_played: [
+                    "Italian Game (Two Knights Defense)"
+                ],
+                most_successful_opening: "Italian Game (100% Win Probability in current position)",
+                style_tag: "Tactical/Mainline"
+            },
+            performance_stability: {
+                fatigue_indicator: "None (Round 1 Baseline)",
+                energy_level: "High",
+                analysis: "The player selected a high-energy opening line requiring precise calculation and aggression. No signs of passive play or early draws."
+            },
+            recurring_tactical_themes: {
+                identified_themes: [
+                    "f7 Weakness Exploitation",
+                    "Destruction of King Safety",
+                    "Dynamic Piece Sacrifice"
+                ],
+                pattern_note: "Player actively seeks lines that target the opponent's f7 square."
+            },
+            psychological_profile: {
+                current_state: "Confident Aggressor",
+                profile_details: "By entering the Fried Liver Attack, the player signals a lack of fear regarding complications. They prefer concrete, forcing lines over slow maneuvering. This suggests a player who prepared this trap specifically or knows their theory well.",
+                reaction_to_adversity: "N/A (Data insufficient - Game 1)"
+            },
+            tournament_mvp_move: {
+                move_notation: "6. Nxf7",
+                game_round: "1",
+                description: "The definitive punish. This knight sacrifice destroys Black's coordination and exposes the King. It is the most impactful move of the tournament so far."
+            }
+        }
     }
 };
